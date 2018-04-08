@@ -1,19 +1,37 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI Light", sans-serif;
+}
+
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+
+body {
+	display : table;
+	width: 100%;
 }
 
 body {
   background-color: #ffffff;
 }
 
+div.footer {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background-color: #34495e;
+  width: 100%;
+  color: white;
+}
+
 h1.title {
   text-transform: uppercase;
   font-family: "Segoe UI Light", sans-serif;
+  margin-bottom: 10px;
 }
 
 h2.title {
-  margin-left: 15px;
   padding-top: 15px;
   text-transform: uppercase;
   font-family: "Segoe UI Light", sans-serif;
@@ -39,17 +57,40 @@ h2.title {
   max-height: 200px;
   max-width: 400px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 10px 0 #8C8C8C;
-  box-shadow: 0 0 10px 0 #8C8C8C;
+  -webkit-box-shadow: 0 0 15px 0 #8C8C8C;
+  box-shadow: 0 0 15px 0 #8C8C8C;
 }
 
 img.background {
   -webkit-filter: blur(5px);
-  transform: scale(1.03);
+  transform: scale(1.05);
   z-index: 0;
 }
 
 .card-title {
   position: absolute;
+  margin-left: 15px;
   z-index: 1;
+}
+
+.link {
+  color: #0077B5;
+  margin-right: 10px;
+}
+
+.clear {
+  display:block;
+  clear:both;
+}
+
+.footer-title {
+  margin-left: 15px;
+}
+
+p.text-1 {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  width: 40%;
+  text-align: justify;
 }
