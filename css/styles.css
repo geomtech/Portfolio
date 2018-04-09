@@ -37,6 +37,20 @@ h2.title {
   font-family: "Segoe UI Light", sans-serif;
 }
 
+img.background {
+  -webkit-filter: blur(5px);
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+p.text-1 {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  width: 40%;
+  text-align: justify;
+}
+
 .color-white {
   color: white;
 }
@@ -61,12 +75,6 @@ h2.title {
   box-shadow: 0 0 15px 0 #8C8C8C;
 }
 
-img.background {
-  -webkit-filter: blur(5px);
-  transform: scale(1.05);
-  z-index: 0;
-}
-
 .card-title {
   position: absolute;
   margin-left: 15px;
@@ -85,12 +93,4 @@ img.background {
 
 .footer-title {
   margin-left: 15px;
-}
-
-p.text-1 {
-  margin-left: 30px;
-  margin-bottom: 30px;
-  padding-top: 15px;
-  width: 40%;
-  text-align: justify;
 }
