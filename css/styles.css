@@ -12,17 +12,18 @@ html, body {
 body {
 	display : table;
 	width: 100%;
-}
-
-body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 div.footer {
-  position: absolute; bottom: 0; left: 0; right: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: #34495e;
   width: 100%;
   color: white;
+  padding-top: 15px;
 }
 
 h1.title {
@@ -32,7 +33,7 @@ h1.title {
 }
 
 h2.title {
-  padding-top: 15px;
+
   text-transform: uppercase;
   font-family: "Segoe UI Light", sans-serif;
 }
@@ -43,12 +44,26 @@ img.background {
   z-index: 0;
 }
 
-p.text-1 {
+img.background-square {
+  -webkit-filter: blur(2.5px);
+  transform: scale(1.5);
+  z-index: 0;
+}
+
+p.footer-text-1 {
   margin-left: 30px;
   margin-bottom: 30px;
   padding-top: 15px;
   width: 40%;
   text-align: justify;
+}
+
+img.etire {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .color-white {
@@ -75,8 +90,19 @@ p.text-1 {
   box-shadow: 0 0 15px 0 #8C8C8C;
 }
 
+.card-square {
+  float: left;
+  margin-right: 20px;
+  max-height: 200px;
+  max-width: 200px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 15px 0 #8C8C8C;
+  box-shadow: 0 0 15px 0 #8C8C8C;
+}
+
 .card-title {
   position: absolute;
+  padding-top: 15px;
   margin-left: 15px;
   z-index: 1;
 }
