@@ -7,6 +7,10 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
@@ -18,15 +22,15 @@
     </div>
     <div class="separator"></div>
     <div>
-      <div class="card" id="#projects">
+      <div class="card slidein" id="projects">
         <h2 class="title color-white card-title">Mes projets</h2>
         <div class="background etire projects"></div>
       </div>
-      <div class="card-square" id="cv">
+      <div class="card-square slidein" id="cv">
         <h2 class="title card-title">Mon CV</h2>
         <div class="background-square etire cv"></div>
       </div>
-      <div class="card" id="experience">
+      <div class="card slidein" id="experience">
         <h2 class="title color-white card-title">Mon expérience</h2>
         <div class="background etire desk"></div>
       </div>
@@ -40,10 +44,16 @@
       Depuis 2008, je développe dans divers langages de programmation tel que le C#, PHP, CSS, HTML, JavaScript, VB.NET, ainsi qu'un peu de Java. Je suis désormais en BTS SIO option SISR première année en alternance aux Galeries Lafayette.
     </p>
   </div>
+  <p id="secret">Texte caché lol</p>
 </body>
-<script type="javascript">
-$( "#projects" ).click(function() {
-  alert( "PD." );
+
+<script>
+$(".slidein").toggleClass("anim-card");
+$("#secret").hide();
+$(document).ready(function(){
+  $( "#experience" ).click(function() {
+    $(".card").toggleClass("anim-card");
+  });
 });
 </script>
 </html>
