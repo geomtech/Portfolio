@@ -208,12 +208,29 @@ div.card-nav {
   animation-delay: 0.5s;
 }
 
+.msgbox{
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px !important;
+  height: 50px;
+  background-color: white;
+}
+
 .anim-card-experience {
   opacity: 0;
   animation:opacity-anim 1s forwards;
   animation-iteration-count: 1;
 	animation-timing-function: ease-in;
   animation-delay: 1s;
+}
+
+#phone:hover {
+  cursor: pointer;
 }
 
 @keyframes opacity-anim {

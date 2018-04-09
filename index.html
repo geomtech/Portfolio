@@ -18,8 +18,8 @@
     <div class="shadow card card-nav">
       <h1 class="title">Alexy DA CRUZ</h1>
       <div class="social-networks">
-        <a class="link" href="https://www.linkedin.com/in/alexy-da-cruz/"><i class="fab fa-linkedin-in"></i></a>
-        <a class="link" href="#phone"><i class="fas fa-phone"></i></a>
+        <a class="link" href="https://www.linkedin.com/in/alexy-da-cruz/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="link" id="phone"><i class="fas fa-phone"></i></a>
         <a class="link" href="mailto:dacruzalexy@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
@@ -52,14 +52,29 @@
     <p class="credit">Site développé par Alexy DA CRUZ.</p>
   </div>
 
+  <div class="shadow msgbox">
+    <p>Numéro de téléphone</p>
+  </div>
+
 </body>
 
 <script>
+var msgbox = false;
 $("#projects").toggleClass("anim-card-projects");
 $("#cv").toggleClass("anim-card-cv");
 $("#experience").toggleClass("anim-card-experience");
 $(".footer").toggleClass("anim-footer");
 $(".card").toggleClass("anim-card");
+
+$("#phone").click(function() {
+  if(msgbox == false){
+    $(".msgbox").css("visibility", "visible")
+    msgbox = true;
+  } else {
+    $(".msgbox").css("visibility", "hidden")
+    msgbox = false;
+  }
+});
 
 </script>
 </html>
