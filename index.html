@@ -5,6 +5,7 @@
     Alexy DA CRUZ - Portfolio
   </title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <script
@@ -14,23 +15,26 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="title">Alexy DA CRUZ</h1>
-    <div class="social-networks">
-      <a class="link" href="https://www.linkedin.com/in/alexy-da-cruz/"><i class="fab fa-linkedin-in"></i></a>
-      <a class="link" href="#phone"><i class="fas fa-phone"></i></a>
-      <a class="link" href="mailto:dacruzalexy@gmail.com"><i class="fas fa-envelope"></i></a>
+    <div class="shadow card card-nav">
+      <h1 class="title">Alexy DA CRUZ</h1>
+      <div class="social-networks">
+        <a class="link" href="https://www.linkedin.com/in/alexy-da-cruz/"><i class="fab fa-linkedin-in"></i></a>
+        <a class="link" href="#phone"><i class="fas fa-phone"></i></a>
+        <a class="link" href="mailto:dacruzalexy@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
+    <div class="clear"></div>
     <div class="separator"></div>
     <div>
-      <div class="card slidein" id="projects">
+      <div class="shadow categorie card opacity-anim" id="projects">
         <h2 class="title color-white card-title">Mes projets</h2>
         <div class="background etire projects"></div>
       </div>
-      <div class="card-square slidein" id="cv">
+      <div class="shadow categorie card-square opacity-anim" id="cv">
         <h2 class="title card-title">Mon CV</h2>
         <div class="background-square etire cv"></div>
       </div>
-      <div class="card slidein" id="experience">
+      <div class="shadow categorie card opacity-anim" id="experience">
         <h2 class="title color-white card-title">Mon expérience</h2>
         <div class="background etire desk"></div>
       </div>
@@ -40,20 +44,22 @@
   <div class="footer">
     <h2 class="title footer-title">À Propos de moi...</h2>
     <p class="footer-text-1">
-      Je suis un étudiant en informatique depuis maintenant 3 ans ! En passant par le fonctionnement de nos systèmes informatique, et du réseau, j'ai pû effectuer différents stages en entreprise qui ont pû m'apporter une expérience professionnel, et qui ont renforcer mes connaissances.
+      Je suis un étudiant en informatique depuis maintenant 3 ans ! En passant par le fonctionnement de nos systèmes informatique, et du réseau, j'ai pû effectuer différents stages en entreprise qui ont pû m'apporter une expérience professionnelle, et qui ont renforcer mes connaissances.
       Depuis 2008, je développe dans divers langages de programmation tel que le C#, PHP, CSS, HTML, JavaScript, VB.NET, ainsi qu'un peu de Java. Je suis désormais en BTS SIO option SISR première année en alternance aux Galeries Lafayette.
     </p>
   </div>
-  <p id="secret">Texte caché lol</p>
+  <div class="card bgcolor-blue-night credit-card">
+    <p class="credit">Site développé par Alexy DA CRUZ.</p>
+  </div>
+
 </body>
 
 <script>
-$(".slidein").toggleClass("anim-card");
-$("#secret").hide();
-$(document).ready(function(){
-  $( "#experience" ).click(function() {
-    $(".card").toggleClass("anim-card");
-  });
-});
+$("#projects").toggleClass("anim-card-projects");
+$("#cv").toggleClass("anim-card-cv");
+$("#experience").toggleClass("anim-card-experience");
+$(".footer").toggleClass("anim-footer");
+$(".card").toggleClass("anim-card");
+
 </script>
 </html>
