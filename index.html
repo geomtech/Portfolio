@@ -18,17 +18,17 @@
     </div>
     <div class="separator"/>
     <div>
-      <div class="card">
+      <div class="card" id="#projects">
         <h2 class="title color-white card-title">Mes projets</h2>
-        <img src="./img/php.png" class="background"></img>
+        <div class="background etire projects"></div>
       </div>
-      <div class="card-square">
+      <div class="card-square" id="cv">
         <h2 class="title card-title">Mon CV</h2>
-        <img src="./img/cv.jpg" class="background-square"></img>
+        <div class="background-square etire cv"></div>
       </div>
-      <div class="card">
+      <div class="card" id="experience">
         <h2 class="title color-white card-title">Mon expérience</h2>
-        <img src="./img/desk.jpg" class="background etire"></img>
+        <div class="background etire desk"></div>
       </div>
     </div>
     <div class="clear"/>
@@ -41,4 +41,9 @@
     </p>
   </div>
 </body>
+<script type="javascript">
+$( "#projects" ).click(function() {
+  alert( "PD." );
+});
+</script>
 </html>
