@@ -122,6 +122,13 @@ div.card-nav {
 .shadow {
   -webkit-box-shadow: 0 0 15px 0 #8C8C8C;
   box-shadow: 0 0 15px 0 #8C8C8C;
+  transition-property: box-shadow, -webkit-box-shadow;
+  transition-duration: 1s;
+}
+
+.shadow:hover {
+  -webkit-box-shadow: 0 0 15px 0 #0984e3;
+  box-shadow: 0 0 15px 0 #0984e3;
 }
 
 .card-square {
@@ -130,8 +137,6 @@ div.card-nav {
   max-height: 200px;
   width: 200px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 15px 0 #8C8C8C;
-  box-shadow: 0 0 15px 0 #8C8C8C;
 }
 
 .card-title {
@@ -157,6 +162,10 @@ div.card-nav {
 
 .categorie {
   margin-top: 15px;
+}
+
+.categorie:hover {
+  cursor: pointer;
 }
 
 .projects {
